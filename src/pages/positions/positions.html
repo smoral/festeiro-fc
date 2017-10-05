@@ -3,10 +3,11 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Festeiro</ion-title>
+    <ion-title>Tabla de Posiciones</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h3>Todos los datos de Festeiro FC</h3>
+    <div [innerHTML]="html">
+    </div>
 </ion-content>

@@ -1,0 +1,36 @@
+page-positions {
+
+}
+.bg_table_gral {
+    font: normal 12px Arial, Helvetica, sans-serif;
+    color: #333333;
+    text-align: center;
+    padding: 8px;
+    background: url(/images/tablas/bg-tables-bot.png) no-repeat center bottom;
+}
+.bg_table_encabezados {
+    background: #666666 repeat-x left top;
+    font: bold 11px Arial, Helvetica, sans-serif;
+    color: #E5E5E5;
+    text-align: center;
+    padding: 4px 2px;
+}
+.bg_table_interior {
+    background: #FFFFFF url(/images/tablas/bg-cd.jpg) repeat-x left top;
+    font: normal 11px Arial, Helvetica, sans-serif;
+    color: #333333;
+    text-align: center;
+    padding: 6px 2px;
+    border-top: 1px none #E8E8E8;
+    border-right: 1px solid #E8E8E8;
+    border-bottom: 1px none #E8E8E8;
+    border-left: 1px none #E8E8E8;
+}
+
+.bg_table_interior_detalle {
+    background: #cbcbcb url(/images/tablas/bg-cd-selec.png) repeat-x left top;
+    font: normal 11px Arial, Helvetica, sans-serif;
+    color: #333333;
+    text-align: center;
+    padding: 2px;
+}
