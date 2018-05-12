@@ -32,18 +32,18 @@ export class MyApp {
         title: 'Fixture',
         component: PositionsPage,
         url: 'http://northchamp.com.ar/torneos_zona_Fixture.asp?id_torneo=3071',
-        tableClass: 'bg_table_gral'
+        tableClass: 'bg_tablas_internas'
       },
       { 
         title: 'Jugadores',
         component: PositionsPage,
         url: 'http://northchamp.com.ar/equipo_detalle.asp?id_equipo=42663',
-        tableClass: 'bg_table_gral'
+        tableClass: 'bg_tablas_internas'
       }
     ];
 
   }
-  festeiro
+  
   initializeApp() {
     this.platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
