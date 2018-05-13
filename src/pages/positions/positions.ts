@@ -22,7 +22,8 @@ export class PositionsPage {
     this.tableClass = navParams.get('tableClass');
     this.title = navParams.get('title');
     const loading = this.loadingCtrl.create({
-      content: 'Cargando '+this.title+'...'
+      content: 'Cargando '+this.title+'...',
+      duration: 5000
     });
     loading.present();
     this.http.get(this.url,{},{}).then(
