@@ -12,6 +12,8 @@ export class PositionsPage {
   url;
   tableClass;
   title;
+  arrayPosition;
+  
   
   constructor(
     public navCtrl: NavController,
@@ -21,6 +23,7 @@ export class PositionsPage {
     this.url = navParams.get('url');
     this.tableClass = navParams.get('tableClass');
     this.title = navParams.get('title');
+    this.arrayPosition = navParams.get('arrayPosition');
     const loading = this.loadingCtrl.create({
       content: 'Cargando '+this.title+'...',
       duration: 5000
@@ -30,7 +33,7 @@ export class PositionsPage {
       data => {
         let parser = new DOMParser();
         let parsedHtml = parser.parseFromString(data.data, 'text/html');
-        this.html = parsedHtml.getElementsByClassName(this.tableClass)[0].outerHTML;
+        this.html = parsedHtml.getElementsByClassName(this.tableClass)[this.arrayPosition].outerHTML;
         loading.dismiss();
       }).catch(error => {
         console.log(error.status);

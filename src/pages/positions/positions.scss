@@ -1,6 +1,56 @@
 page-positions {
 
 }
+.texto11 {
+    text-decoration: none;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+    border-left-style: none;
+    font: 11px arial;
+}
+.texto11b {
+    font-family: arial;
+    font-size: 11px;
+    color: #FFFFFF;
+    text-align: center;
+}
+.texto11_raya_abajo1 {
+    font-family: arial;
+    font-size: 10px;
+    text-decoration: none;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: solid;
+    border-left-style: none;
+    border-top-color: #D1D3D3;
+    border-right-color: #D1D3D3;
+    border-bottom-color: #D1D3D3;
+    border-left-color: #D1D3D3;
+}
+.texto11_raya_abajo2 {
+    font-family: arial;
+    font-size: 10px;
+    text-decoration: none;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: solid;
+    border-left-style: none;
+    border-top-color: #D1D3D3;
+    border-right-color: #D1D3D3;
+    border-bottom-color: #D1D3D3;
+    border-left-color: #D1D3D3;
+    background-color: #E9E9E9;
+}
+
 .bg_table_gral {
     font: normal 12px Arial, Helvetica, sans-serif;
     color: #333333;
@@ -8,6 +58,7 @@ page-positions {
     padding: 8px;
     background: url(/images/tablas/bg-tables-bot.png) no-repeat center bottom;
 }
+
 .bg_table_encabezados {
     background: #666666 repeat-x left top;
     font: bold 11px Arial, Helvetica, sans-serif;
@@ -15,6 +66,7 @@ page-positions {
     text-align: center;
     padding: 4px 2px;
 }
+
 .bg_table_interior {
     background: #FFFFFF url(/images/tablas/bg-cd.jpg) repeat-x left top;
     font: normal 11px Arial, Helvetica, sans-serif;
@@ -26,7 +78,6 @@ page-positions {
     border-bottom: 1px none #E8E8E8;
     border-left: 1px none #E8E8E8;
 }
-
 .bg_table_interior_detalle {
     background: #cbcbcb url(/images/tablas/bg-cd-selec.png) repeat-x left top;
     font: normal 11px Arial, Helvetica, sans-serif;
