@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { HTTP } from '@ionic-native/http';
 import { LoadingController } from 'ionic-angular';
+import { InAppBrowser } from '@ionic-native/in-app-browser';
 
 @Component({
   selector: 'page-positions',
@@ -10,6 +11,7 @@ import { LoadingController } from 'ionic-angular';
 export class PositionsPage {
   html;
   url;
+  urlBrowser;
   tableClass;
   title;
   arrayPosition;
@@ -18,9 +20,11 @@ export class PositionsPage {
   constructor(
     public navCtrl: NavController,
     public navParams: NavParams, public http: HTTP,
-    public loadingCtrl: LoadingController
+    public loadingCtrl: LoadingController,
+    private iab: InAppBrowser
   ) {
     this.url = navParams.get('url');
+    this.urlBrowser = navParams.get('urlBrowser');
     this.tableClass = navParams.get('tableClass');
     this.title = navParams.get('title');
     this.arrayPosition = navParams.get('arrayPosition');
@@ -41,6 +45,10 @@ export class PositionsPage {
         console.log(error.error); // error message as string
         console.log(error.headers);
       });
+  }
+  
+  openBrowser() {
+    this.iab.create(this.urlBrowser, '_system');
   }
 
 }
