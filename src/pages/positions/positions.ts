@@ -26,7 +26,7 @@ export class PositionsPage {
     this.arrayPosition = navParams.get('arrayPosition');
     const loading = this.loadingCtrl.create({
       content: 'Cargando '+this.title+'...',
-      duration: 5000
+      duration: 15000
     });
     loading.present();
     this.http.get(this.url,{},{}).then(
@@ -36,6 +36,7 @@ export class PositionsPage {
         this.html = parsedHtml.getElementsByClassName(this.tableClass)[this.arrayPosition].outerHTML;
         loading.dismiss();
       }).catch(error => {
+        loading.dismiss();
         console.log(error.status);
         console.log(error.error); // error message as string
         console.log(error.headers);
